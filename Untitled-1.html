@@ -1,15 +1,79 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        body{
-            background-color: darkgray;
-        }
-
-    </style>
     <head>
-        <title>This is a Test Yay</title>
+        <title>My Portfolio</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: 'Arial', sans-serif;
+            }
+
+            .section {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .content {
+                background: rgba(0,0,0,0.6);
+                padding: 2rem;
+                border-radius: 10px;
+                max-width: 600px;
+                text-align: center;
+            }
+
+            h1, h2 {
+                margin: 0 0 1rem 0;
+            }
+
+            .intro {
+                background-image: url('pexels-goumbik-574071.jpg');
+            }
+
+            .work {
+                background-image: url('pexels-markusspiske-965345.jpg');
+            }
+
+            .contact {
+                background-image: url('pexels-luis-gomes-166706-546819.jpg');
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
     </head>
     <body>
-        <p style="color:blueviolet">so i can change shit here</p>
+        <div class="section intro">
+            <div class="content">
+                <h1>Introduction</h1>
+                <p>I am a 14 year old programmer and I want to make video games</p>
+            </div>
+        </div>
+
+        <div class="section work">
+            <div class="content">
+                <h2>My Work</h2>
+                <p>[Coming Soon]</p>
+            </div>
+        </div>
+
+        <div class="section contact">
+            <div class="content">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:tye43763@gmail.com" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ'); return true;">tye43763@gmail.com</a></p>
+            </div>
+        </div>
     </body>
 </html>
